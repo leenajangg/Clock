@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> Time | External JS </title>
+
+<style> 
+*{
+  margin: 0;
+  overflow: hidden;
+  cursor:default;
+  font-family: sans-serif;
+}
+
+canvas{
+  background:white;
+}
+
+.title{
+  position:absolute;
+  font-size: 5vw;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255,255,255,0.3);
+}
+
+.subtitle{
+  position:absolute;
+  font-size: 1.5vw;
+  letter-spacing: 0.05vw;
+  top: 50.5%;
+  transform: translateY(-50%);
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 0 7.5px rgba(0,0,0,1), 0 0 7.5px rgba(0,0,0,1), 0 0 7.5px rgba(0,0,0,1);
+}
+
+.date{
+  position:absolute;
+  font-size: 1.65vw;
+  top: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  text-shadow: 0 0 7.5px rgba(255,255,255,1), 0 0 7.5px rgba(255,255,255,1);
+}
+
+#year{
+  top: calc(50% + 3.5vw);
+  right: 50%;
+}
+</style>
+
+</head>
+
+<body>
+<canvas></canvas>
+  <h1 class="title">time</h1>
+  <h2 class="subtitle">#codevember</h2>
+  <h2 class="date" id="year"></h2>
+  <h2 class="date" id="seconds"></h2>
+  <h2 class="date" id="separator1">:</h2>
+  <h2 class="date" id="minutes"></h2>
+  <h2 class="date" id="separator2">:</h2>
+  <h2 class="date" id="hours"></h2>
+  <h2 class="date" id="days"></h2>
+  <h2 class="date" id="months"></h2>
+  
+<script src="time.js"></script>
+</body>
+
+</html>
